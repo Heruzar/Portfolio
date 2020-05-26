@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <body background="../images/spaceship-wallpaper-2560x1600-4089_7.jpg"height="720" width="480"></body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div style= "text-align:center"class="contenedor">
+        <h1 style="text-align:center;color:rgb(8,112,153)">Formulario</h1>
+        <div id="centrar">
+            <h2 style="color:rgb(8,112,153)"class="titulos">Complete las preguntas</h2>
+            <br>
+            <p style="color:rgb(8,112,153)"class="textos">¿Cuál es tu nombre?:</p>
+            <input type="text" id="Nombre" maxlength="20" required="">
+            <p style="color:rgb(8,112,153)"class="textos">¿Cuál es tu apellido?:</p>
+            <input type="text" id="Apellido" maxlength="20" required="">
+            <br>
+            <p style="color:rgb(8,112,153)"class="textos">¿Cuál es tu edad?:</p>
+            <input type="number" id="Edad" maxlength="3" required="">
+            <p style="color:rgb(8,112,153)"class="textos">¿Cuál es tu hobby?:</p>
+            <input type="text" id="Juego" required="">
+            <br>
+            <br>
+            <button id="boton" type="submit">Enviar</button>
+            <br>
+            <br>
+            <p id="parrafo"style="color:rgb(8,112,153)"></p>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        var boton = document.getElementById("boton");
+        boton.onclick = function(){
+
+            var Nombre = document.getElementById("Nombre").value;
+            var Apellido = document.getElementById("Apellido").value;
+            var Edad = document.getElementById("Edad").value;
+            var Juego = document.getElementById("Juego").value;
+
+
+
+            document.getElementById("parrafo").innerHTML = "Bienvenido " + Nombre + " " + Apellido + "," + " tenés " + Edad + " años eh y tu hobby es " + Juego + ", Jaja siempre es bueno conocer nuevas personas"  ;
+        }
+    </script>
+    <a style="text-align:center" href="./Indice.html"><h2 class="shadow-lg p-3 mb-5"> Volver</h2></a>
+    <a style="text-align:center" href="../index.html"><h2 class="shadow-lg p-3 mb-5"> Volver a la página principal</h2></a>
+</body>
+</html>
+
+
+
+   

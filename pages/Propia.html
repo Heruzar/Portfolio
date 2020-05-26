@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <body background="../images/spaceship-wallpaper-2560x1600-4089_7.jpg"height="720" width="480"></body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body style= "text-align:center">
+    <div style="color:rgb(8,112,153)" class="contenedor">
+        <h1 id="titulo-principal">Calculadora</h1>
+        <br>
+        <h2 class="titulos">Ingrese los números y elija la operación deseada:</h2>
+        <br>
+        <br>
+        <input id="a" type="text">
+        <input id="b" type="text">
+        <input type="button" onclick="suma(document.getElementById('a').value,document.getElementById('b').value);" value="Sumar">
+        <input type="button" onclick="resta(document.getElementById('a').value,document.getElementById('b').value);" value="Restar">
+        <input type="button" onclick="multiplicacion(document.getElementById('a').value,document.getElementById('b').value);" value="Multiplicar">
+        <input type="button" onclick="division(document.getElementById('a').value,document.getElementById('b').value);" value="Dividir">
+        <br>
+        <p>si ingresa letras la operación siempre dará error</p>
+    </div>
+    
+    <script type="text/javascript">
+    
+    function suma(a,b)
+    {
+        var r = Number(a)+Number(b);
+        alert("Resultado: " + r);
+    }
+    function resta(a,b)
+    {
+        var r = Number(a)-Number(b);
+        alert("Resultado: " + r);
+    }
+    function multiplicacion (a,b)
+    {
+        var r = Number(a)*Number(b);
+        alert("Resultado: " + r);
+    }
+    function division (x,y)
+    {
+        var r = Number(x)/Number(y);
+        alert("Resultado: " + r);
+    }
+    </script>    
+    <br>
+    <br>
+    <br>
+        <a style="text-align:center" href="./Indice.html"><h2 class="shadow-lg p-3 mb-5"> Volver</h2></a>
+        <a style="text-align:center" href="../index.html"><h2 class="shadow-lg p-3 mb-5"> Volver a la página principal</h2></a>
+</body>
+</html>

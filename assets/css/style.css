@@ -10,6 +10,12 @@
         border-radius: 70%;
     }
 
+    A{
+        font-size: 20px;
+    }
+    Li{
+        font-size: 30px;
+    }
     /* Selector ID  */
     #parrafo--especial {
         font-family: sans-serif;
